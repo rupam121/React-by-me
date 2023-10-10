@@ -14,6 +14,7 @@ import PropertyList from "./PropertyList";
 import ShopingListItem from "./ShopingListItem";
 import Clicker from "./Clicker";
 import Form from "./Form";
+import Counter from "./Counter";
 
 const properties = [
   { id: 101, name: "Hotel1", rating: 4.5, price: 120 },
@@ -34,8 +35,8 @@ const properties = [
 function App() {
   return (
     <div>
-
-      <Clicker message="HI!!" buttonText="Please Click Me" />
+      <Counter />
+      {/* <Clicker message="HI!!" buttonText="Please Click Me" /> */}
 
       {/* <Form /> */}
       {/* <PropertyList properties={properties} /> */}
