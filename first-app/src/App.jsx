@@ -17,6 +17,8 @@ import Form from "./Form";
 import Counter from "./Counter";
 import Toggler from "./Toggler";
 import TogglerCounter from "./ToggleCounter";
+import ColorBox from "./ColorBox";
+import ColorBoxGrid from "./ColorBoxGrid";
 
 const properties = [
   { id: 101, name: "Hotel1", rating: 4.5, price: 120 },
@@ -27,19 +29,25 @@ const properties = [
   { id: 106, name: "Hotel6", rating: 8.5, price: 160 },
 ]
 
-// const data = [
-//   { item: 'egg', quantity: 12, completed: false },
-//   { item: 'milk', quantity: 1, completed: true },
-//   { item: 'checken', quantity: 10, completed: true },
-//   { item: 'app', quantity: 3, completed: false }
-// ]
+const data = [
+  { item: 'egg', quantity: 12, completed: false },
+  { item: 'milk', quantity: 1, completed: true },
+  { item: 'checken', quantity: 10, completed: true },
+  { item: 'app', quantity: 3, completed: false }
+]
+
+const colors = [
+  "#E53935", "#E91E63", "#9C2780", "#673AB7", "#3F51B5", "#2196F3", "#03A9F4", "#009688", "#4CAF50", "#8BC34A", "#CDDC39", "#FFEB3B", "#FFC107", "#FF9800", "#FF5722"
+];
 
 function App() {
   return (
     <div>
-      <TogglerCounter />
+      <ColorBoxGrid colors={colors} />
+      {/* <TogglerCounter /> */}
 
       {/* <Counter /> */}
+
       {/* <Clicker message="HI!!" buttonText="Please Click Me" /> */}
 
       {/* <Form /> */}

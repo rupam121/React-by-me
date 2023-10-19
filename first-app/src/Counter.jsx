@@ -1,15 +1,13 @@
 import { useState } from "react"
 
 export default function Counter() {
-    // let num = 0;
-    // const incrementNum = () => {
-    //     num += 1;
-    //     console.log(num);
-    // };
-    // console.log(arr);
     const [num, setNum] = useState(5);
+    console.log("COMPONENT HAS BEEN EXECUTE AGAIN");
+    console.log(`num: ${num}`);
     const changeNum = () => {
         setNum(num + 1);
+        console.log("SET NUM HAS RUN!");
+        console.log(`num: ${num}`);
     }
     return (
         <div>
