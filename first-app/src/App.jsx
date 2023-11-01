@@ -19,6 +19,7 @@ import Toggler from "./Toggler";
 import TogglerCounter from "./ToggleCounter";
 import ColorBox from "./ColorBox";
 import ColorBoxGrid from "./ColorBoxGrid";
+import ScoreKeeper from "./ScoreKeeper";
 
 const properties = [
   { id: 101, name: "Hotel1", rating: 4.5, price: 120 },
@@ -43,7 +44,8 @@ const colors = [
 function App() {
   return (
     <div>
-      <ColorBoxGrid colors={colors} />
+
+      {/* <ColorBoxGrid colors={colors} /> */}
       {/* <TogglerCounter /> */}
 
       {/* <Counter /> */}
